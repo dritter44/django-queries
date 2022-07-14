@@ -2,6 +2,7 @@ from django.test import TestCase
 from .models import Product
 from .product_crud import ProductCrud
 
+
 def get_query_ids(queryset):
     return list(queryset.values_list('id', flat=True))
 
